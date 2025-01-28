@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Ventas</title>
+    <link rel="stylesheet" href="{% static '/style/main.css' %}">
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <ul>
+                <h1 class="logo">Control Ventas</h1>
+                <li><a class="a_nav" href="/">All</a></li>
+                <li><a class="a_nav" href="/product/">Products</a></li>
+                <li><a class="a_nav" href="/sells/">Sells</a></li>
+                <li><a class="a_nav" href="/forms/">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+
+    <script>
+        // Obtener la URL actual
+        const currentUrl = window.location.pathname;
+
+        // Obtener todos los enlaces de navegación
+        const navLinks = document.querySelectorAll('nav a');
+
+        // Iterar sobre los enlaces y añadir la clase 'active' al enlace correspondiente
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentUrl) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

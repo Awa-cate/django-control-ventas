@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Sells</h1>
+<div class="container_sells">
+
+    <div class="tab">
+        <h2>Add sells of the day</h2>
+        {{error}}
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            {{sellForm}}
+            <div><button name="sell_form">Add sells</button></div>
+        </form>
+    </div>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Total Import</th>
+            <th></th>
+        </tr>
+
+        {% for sell in sells %}
+        <tr>
+            <td>{{sell.day}}</td>
+            <td>{{sell.product}}</td>
+            <td>{{sell.amount}}</td>
+            <td>{{sell.total_import}}</td>
+            <td><a class="edit" href="{% url 'sells_detail' sell.id %}">Edit</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+
+<div class="sells">
+
+    <div class="tab">
+        <h1>Sells of Today</h1>
+        <h3>{{ total_importe }}</h2>
+    </div>
+
+    <div class="tab">
+        <h1>Sells of the Month</h1>
+        <h3>{{ total_importe_mes }}</h2>
+    </div>
+
+</div>
+{% endblock %}

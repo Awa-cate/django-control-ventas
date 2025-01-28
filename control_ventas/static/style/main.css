@@ -1,0 +1,185 @@
+.sells {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    margin: 0;
+    color: cyan;
+    background-image: url('back.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.769);
+    font-size: 20px;
+}
+
+.navbar ul {
+    margin: 1px;
+    padding: 1px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+    color: yellow;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.a_nav {
+    color: yellow;
+    text-decoration: none;
+}
+
+.a_nav:hover {
+    color: white;
+}
+
+.active {
+    text-decoration: cyan overline;
+}
+
+.container_products {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: space-around;
+}
+.container_products table{
+    grid-column-start: span 2;
+}
+
+.container_sells {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: space-around;
+}
+.container_sells .tab {
+    grid-template-columns: 300px 300px;
+}
+
+.container_sells table {
+    grid-column-start: span 2;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tab {
+    background-color: black;
+    border: 3px solid cyan;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-height: 155px;
+    max-width: 260px;
+}
+
+.tab h1 {
+    margin: 0;
+    color: black;
+    background-color: cyan;
+}
+.tab h2 {
+    margin: 0;
+    color: black;
+    background-color: cyan;
+}
+.tab h3 {
+    text-align: center;
+    color: yellow;
+}
+
+form div {
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 136px) 1fr;
+    padding: 3px;
+}
+
+div button {
+    grid-column-start: 2;
+    grid-template-rows: auto;
+} 
+
+
+input {
+    color: cyan;
+    border: 1px solid cyan;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+    max-width: 130px;
+}
+input:hover {
+    border-color: yellow;
+}
+
+
+
+#id_product {
+    color: cyan;
+    background-color: black;
+    border: 1px solid cyan;
+    border-bottom-right-radius: 10px;
+    appearance: none;
+    width: 130px;
+}
+button {
+    color: yellow;
+    border: 2px solid yellow;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+}
+button:hover {
+    color: white
+}
+.edit {
+    color: yellow;
+    text-decoration: none;
+}
+.edit:hover {
+    color: white;
+}
+table {
+    background-color: black;
+    border-spacing: 0;
+    border-radius: 10px;
+}
+table th {
+    border-bottom: 2px solid cyan;
+}
+table th:first-child {
+    border-left: 2px solid cyan;
+}
+table td:first-child {
+    border-left: 2px solid cyan;
+    text-align: start;
+    padding-left: 10px;
+}
+table tr td {
+    padding: 5px;
+    text-align: center;
+}
+
+#other_months {
+    border: 2px solid cyan;
+    border-bottom-right-radius: 10px;
+
+}
