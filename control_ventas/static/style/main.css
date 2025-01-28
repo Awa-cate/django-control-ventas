@@ -23,7 +23,7 @@ body{
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.769);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .navbar ul {
@@ -88,10 +88,14 @@ body{
     .container_sells {
         grid-template-columns: 1fr;
     }
+    body {
+        font-size: 14px;
+    }
 }
 
 h1 {
     text-align: center;
+    font-size: 2rem;
 }
 
 .tab {
