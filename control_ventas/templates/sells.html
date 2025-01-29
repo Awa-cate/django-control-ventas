@@ -9,7 +9,6 @@
         {{error}}
         <form action="" method="POST">
             {% csrf_token %}
-
             {{sellForm}}
             <div><button name="sell_form">Add sells</button></div>
         </form>
@@ -38,16 +37,13 @@
 </div>
 
 <div class="sells">
-
     <div class="tab">
         <h2>Sells of Today</h2>
         <p>{{ total_importe }}</p>
     </div>
-
     <div class="tab">
         <h2>Sells of the Month</h2>
         <p>{{ total_importe_mes }}</p>
     </div>
-
 </div>
 {% endblock %}
