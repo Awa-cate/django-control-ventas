@@ -118,6 +118,7 @@ h1 {
     max-width: 260px;
     text-align: center;
     column-gap: 20px;
+    justify-content: center;
 }
 
 .tab h1 {
