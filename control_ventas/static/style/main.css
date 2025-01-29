@@ -12,6 +12,7 @@
     padding: 10px;
     margin: 10px;
     column-gap: 20px;
+    place-items: center;
 }
 
 body{
@@ -63,6 +64,7 @@ body{
     column-gap: 20px;
     row-gap: 20px;
     justify-content: space-around;
+    place-items: center;
 }
 .container_products table{
     grid-column-start: span 2;
@@ -74,6 +76,7 @@ body{
     column-gap: 20px;
     row-gap: 20px;
     justify-content: space-around;
+    place-items: center;
 }
 .container_sells .tab {
     grid-template-columns: 300px 300px;
