@@ -11,6 +11,7 @@
     justify-content: center;
     padding: 10px;
     margin: 10px;
+    column-gap: 20px;
 }
 
 body{
@@ -85,12 +86,16 @@ body{
 @media (max-width: 600px) {
     .container_products {
         grid-template-columns: 1fr;
+        column-gap: 0;
     }
     .container_sells {
         grid-template-columns: 1fr;
+        column-gap: 0;
     }
     .container {
         grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 0;
     }
     body {
         font-size: 14px;
@@ -110,7 +115,7 @@ h1 {
     max-height: 155px;
     max-width: 260px;
     text-align: center;
-    align-self: center;
+    
 }
 
 .tab h1 {
