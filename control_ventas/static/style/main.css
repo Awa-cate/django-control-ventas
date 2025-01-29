@@ -89,6 +89,9 @@ body{
     .container_sells {
         grid-template-columns: 1fr;
     }
+    .container {
+        grid-template-columns: 1fr;
+    }
     body {
         font-size: 14px;
     }
@@ -106,6 +109,7 @@ h1 {
     border-top-left-radius: 10px;
     max-height: 155px;
     max-width: 260px;
+    text-align: center;
 }
 
 .tab h1 {
