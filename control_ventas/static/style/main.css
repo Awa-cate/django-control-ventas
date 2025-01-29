@@ -110,6 +110,7 @@ h1 {
     max-height: 155px;
     max-width: 260px;
     text-align: center;
+    align-self: center;
 }
 
 .tab h1 {
