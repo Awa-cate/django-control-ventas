@@ -87,10 +87,12 @@ body{
     .container_products {
         grid-template-columns: 1fr;
         column-gap: 0;
+        justify-content: center;
     }
     .container_sells {
         grid-template-columns: 1fr;
         column-gap: 0;
+        justify-content: center;
     }
     .container {
         grid-template-columns: 1fr;
@@ -115,7 +117,7 @@ h1 {
     max-height: 155px;
     max-width: 260px;
     text-align: center;
-    
+    column-gap: 20px;
 }
 
 .tab h1 {
